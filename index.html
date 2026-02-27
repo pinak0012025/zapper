@@ -1,258 +1,159 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AITechno Amin&Pinak N | AI & Automation Infrastructure</title>
+    <title>Sturdy Fitness | Elite Coaching Kolkata</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --accent: #3B82F6; /* Electric Blue */
-            --bg: #050505;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: #ffffff;
-        }
-        .heading-font { font-family: 'Plus Jakarta Sans', sans-serif; }
-
-        /* Aura-style Grid Gradient Overlay */
-        .grid-bg {
-            background-image: 
-                linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
-            background-size: 40px 40px;
-            mask-image: radial-gradient(ellipse at center, black, transparent 80%);
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .glass-card:hover {
-            border-color: var(--accent);
-            background: rgba(255, 255, 255, 0.05);
-            transform: translateY(-4px);
-        }
-
-        .hero-glow {
-            background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.15), transparent 60%);
-        }
-
-        .btn-primary {
-            background: #ffffff;
-            color: #000000;
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            background: var(--accent);
-            color: #ffffff;
-            box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #ffffff; }
+        .hero-font { font-family: 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: -0.05em; }
+        .accent-gradient { background: linear-gradient(90deg, #ff4d00 0%, #ff8c00 100%); }
+        .card-bg { background-color: #161616; border: 1px solid #262626; }
     </style>
 </head>
-<body class="overflow-x-hidden">
+<body class="antialiased">
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-black/60 backdrop-blur-md">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <div class="w-7 h-7 bg-blue-600 rounded flex items-center justify-center font-bold text-xs italic">AT</div>
-                <span class="heading-font font-bold text-lg tracking-tight uppercase">AITechno</span>
-            </div>
-            <div class="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
-                <a href="#solutions" class="hover:text-white transition">Solutions</a>
-                <a href="#infrastructure" class="hover:text-white transition">Infrastructure</a>
-                <a href="#about" class="hover:text-white transition">Amin&Pinak N</a>
-            </div>
-            <div class="flex items-center gap-4">
-                <button class="text-sm font-medium text-zinc-400 hover:text-white">Sign In</button>
-                <button class="btn-primary px-4 py-1.5 rounded-full text-sm font-bold">Launch App</button>
-            </div>
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-black tracking-tighter uppercase italic">Sturdy <span class="text-orange-500">Fitness</span></div>
+        <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+            <a href="#programs" class="hover:text-orange-500 transition">Programs</a>
+            <a href="#about" class="hover:text-orange-500 transition">About</a>
+            <a href="#pricing" class="hover:text-orange-500 transition">Membership</a>
+            <a href="#contact" class="hover:text-orange-500 transition">Contact</a>
         </div>
+        <button class="accent-gradient px-6 py-2 rounded-full font-bold text-sm uppercase">Join Now</button>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative pt-32 pb-20 px-6 overflow-hidden">
-        <div class="absolute inset-0 grid-bg pointer-events-none"></div>
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] hero-glow pointer-events-none"></div>
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80" alt="Gym Background" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
+        </div>
         
-        <div class="max-w-5xl mx-auto text-center relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-xs font-medium mb-6">
-                <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-                Powering next-gen enterprise automation
-            </div>
-            <h1 class="heading-font text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 leading-[1.1]">
-                AI Infrastructure for the <br>
-                <span class="text-blue-500">Autonomous Enterprise.</span>
-            </h1>
-            <p class="text-lg text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                AITechno by Amin&Pinak N provides the software foundation to automate complex workflows, manage data at scale, and deploy intelligence across your organization.
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <h1 class="hero-font text-6xl md:text-9xl leading-none mb-6">Build Your <br><span class="text-orange-500 italic">Legacy.</span></h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed uppercase tracking-wide">
+                Premium coaching and elite facilities in the heart of <span class="text-white font-bold">Kolkata, West Bengal</span>.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="btn-primary px-8 py-3 rounded-full font-bold flex items-center justify-center gap-2">
-                    Start Automating <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </button>
-                <button class="glass-card px-8 py-3 rounded-full font-bold flex items-center justify-center gap-2">
-                    Documentation
-                </button>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button class="accent-gradient px-10 py-5 rounded-lg font-black text-lg uppercase shadow-2xl shadow-orange-500/20">Start 7-Day Trial</button>
+                <button class="border border-white/20 bg-white/5 backdrop-blur px-10 py-5 rounded-lg font-black text-lg uppercase hover:bg-white/10 transition">Tour the Facility</button>
             </div>
         </div>
     </header>
 
-    <!-- Logo Cloud (Social Proof) -->
-    <section class="py-10 border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-6">
-            <p class="text-center text-xs font-bold text-zinc-500 uppercase tracking-widest mb-8">Trusted by Global Tech Leaders</p>
-            <div class="flex flex-wrap justify-center gap-12 opacity-30 grayscale">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="h-6 invert" alt="Logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="h-6 invert" alt="Logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="h-6 invert" alt="Logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg" class="h-6 invert" alt="Logo">
+    <!-- Pillars (Perform / Recover / Connect) -->
+    <section id="programs" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card-bg p-10 rounded-3xl hover:border-orange-500 transition group">
+                <div class="text-orange-500 mb-6 text-4xl font-black">01</div>
+                <h3 class="hero-font text-3xl mb-4">Perform</h3>
+                <p class="text-gray-400 leading-relaxed">High-intensity functional training designed to shatter your plateaus and maximize strength.</p>
+            </div>
+            <div class="card-bg p-10 rounded-3xl hover:border-orange-500 transition group">
+                <div class="text-orange-500 mb-6 text-4xl font-black">02</div>
+                <h3 class="hero-font text-3xl mb-4">Recover</h3>
+                <p class="text-gray-400 leading-relaxed">Advanced recovery protocols including cold plunge, sauna, and guided mobility sessions.</p>
+            </div>
+            <div class="card-bg p-10 rounded-3xl hover:border-orange-500 transition group">
+                <div class="text-orange-500 mb-6 text-4xl font-black">03</div>
+                <h3 class="hero-font text-3xl mb-4">Connect</h3>
+                <p class="text-gray-400 leading-relaxed">Join a community of high-performers. Exclusive events and group challenges in Kolkata.</p>
             </div>
         </div>
     </section>
 
-    <!-- Bento Grid Features -->
-    <section id="solutions" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="flex justify-between items-end mb-12">
-            <div>
-                <h2 class="heading-font text-3xl font-bold mb-2">Built for Scale</h2>
-                <p class="text-zinc-500">Comprehensive AI solutions tailored for Amin&Pinak N clients.</p>
-            </div>
-            <a href="#" class="text-blue-500 text-sm font-bold flex items-center gap-2">View all features <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Feature 1 -->
-            <div class="glass-card p-8 rounded-3xl md:col-span-2">
-                <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6">
-                    <i data-lucide="cpu" class="text-blue-500"></i>
+    <!-- Facilities Bento Grid -->
+    <section class="py-24 px-6 bg-[#0f0f0f]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="hero-font text-5xl mb-12 text-center">Our <span class="text-orange-500">Sanctuary</span></h2>
+            <div class="grid md:grid-cols-4 gap-4 auto-rows-[300px]">
+                <div class="md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80" class="w-full h-full object-cover">
+                    <div class="absolute bottom-6 left-6 hero-font text-2xl">Main Strength Floor</div>
                 </div>
-                <h3 class="heading-font text-2xl font-bold mb-4">Neural Process Automation</h3>
-                <p class="text-zinc-400 mb-6">Replace manual, repetitive tasks with self-learning AI agents that adapt to your business environment in real-time.</p>
-                <div class="flex gap-2">
-                    <span class="px-3 py-1 rounded-md bg-white/5 text-[10px] font-bold text-zinc-400 uppercase">Self-Learning</span>
-                    <span class="px-3 py-1 rounded-md bg-white/5 text-[10px] font-bold text-zinc-400 uppercase">Low Latency</span>
+                <div class="md:col-span-2 rounded-3xl overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&q=80" class="w-full h-full object-cover">
+                    <div class="absolute bottom-6 left-6 hero-font text-xl">Cardio Deck</div>
                 </div>
-            </div>
-            <!-- Feature 2 -->
-            <div class="glass-card p-8 rounded-3xl">
-                <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mb-6">
-                    <i data-lucide="database" class="text-purple-500"></i>
+                <div class="rounded-3xl overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80" class="w-full h-full object-cover">
                 </div>
-                <h3 class="heading-font text-xl font-bold mb-4">Data Orchestration</h3>
-                <p class="text-zinc-400 text-sm">Synchronize your entire tech stack with our proprietary API layers designed by Amin&Pinak N.</p>
-            </div>
-            <!-- Feature 3 -->
-            <div class="glass-card p-8 rounded-3xl">
-                <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6">
-                    <i data-lucide="shield-check" class="text-emerald-500"></i>
+                <div class="rounded-3xl overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&q=80" class="w-full h-full object-cover">
                 </div>
-                <h3 class="heading-font text-xl font-bold mb-4">Secure Software</h3>
-                <p class="text-zinc-400 text-sm">Enterprise-grade encryption and compliance standards built into every line of code.</p>
-            </div>
-            <!-- Feature 4 -->
-            <div class="glass-card p-8 rounded-3xl md:col-span-2">
-                <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-6">
-                    <i data-lucide="layout" class="text-orange-500"></i>
-                </div>
-                <h3 class="heading-font text-2xl font-bold mb-4">Autonomous Dashboards</h3>
-                <p class="text-zinc-400 mb-4">Visualize your entire automation pipeline with clean, actionable insights that don't require a data science degree.</p>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="py-24 px-6 bg-zinc-950/50">
-        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
-            <div>
-                <div class="text-4xl font-extrabold heading-font text-blue-500 mb-2">99.9%</div>
-                <div class="text-zinc-500 text-sm font-medium uppercase tracking-widest">Uptime</div>
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 px-6 max-w-7xl mx-auto text-center">
+        <h2 class="hero-font text-5xl mb-16 uppercase">Investment</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card-bg p-8 rounded-3xl border-white/5">
+                <h4 class="uppercase tracking-widest text-gray-500 mb-4">Basic</h4>
+                <div class="text-5xl font-black mb-6">₹2,999<span class="text-sm text-gray-400">/mo</span></div>
+                <ul class="text-gray-400 space-y-4 mb-8">
+                    <li>✓ 24/7 Gym Access</li>
+                    <li>✓ Locker Room</li>
+                    <li>✓ Basic App Access</li>
+                </ul>
+                <button class="w-full py-3 rounded-lg border border-white/20 hover:bg-white/5 transition uppercase font-bold">Select Plan</button>
             </div>
-            <div>
-                <div class="text-4xl font-extrabold heading-font text-blue-500 mb-2">40%</div>
-                <div class="text-zinc-500 text-sm font-medium uppercase tracking-widest">Efficiency Boost</div>
+            <div class="card-bg p-8 rounded-3xl border-orange-500 ring-4 ring-orange-500/10 scale-105 relative">
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 accent-gradient px-4 py-1 rounded-full text-xs font-black uppercase">Most Popular</span>
+                <h4 class="uppercase tracking-widest text-gray-500 mb-4">Elite</h4>
+                <div class="text-5xl font-black mb-6">₹5,499<span class="text-sm text-gray-400">/mo</span></div>
+                <ul class="text-gray-400 space-y-4 mb-8">
+                    <li>✓ Unlimited Classes</li>
+                    <li>✓ Personal Coaching (2/mo)</li>
+                    <li>✓ Recovery Lounge Access</li>
+                    <li>✓ Nutrition Plan</li>
+                </ul>
+                <button class="w-full py-3 rounded-lg accent-gradient uppercase font-black">Get Elite Access</button>
             </div>
-            <div>
-                <div class="text-4xl font-extrabold heading-font text-blue-500 mb-2">12ms</div>
-                <div class="text-zinc-500 text-sm font-medium uppercase tracking-widest">Response Time</div>
-            </div>
-            <div>
-                <div class="text-4xl font-extrabold heading-font text-blue-500 mb-2">24/7</div>
-                <div class="text-zinc-500 text-sm font-medium uppercase tracking-widest">AI Monitoring</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-32 px-6">
-        <div class="max-w-5xl mx-auto glass-card rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
-            <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-blue-600/10 blur-[100px]"></div>
-            <h2 class="heading-font text-4xl md:text-5xl font-bold mb-6">Scale your vision <br>with AITechno.</h2>
-            <p class="text-zinc-400 mb-10 text-lg max-w-xl mx-auto">Connect with Amin&Pinak N to start building your custom AI infrastructure today.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <button class="btn-primary px-10 py-4 rounded-full font-bold">Contact Sales</button>
-                <button class="px-10 py-4 rounded-full font-bold border border-white/10 hover:bg-white/5 transition">View Case Studies</button>
+            <div class="card-bg p-8 rounded-3xl border-white/5">
+                <h4 class="uppercase tracking-widest text-gray-500 mb-4">Pro</h4>
+                <div class="text-5xl font-black mb-6">₹8,999<span class="text-sm text-gray-400">/mo</span></div>
+                <ul class="text-gray-400 space-y-4 mb-8">
+                    <li>✓ 1-on-1 Daily Coaching</li>
+                    <li>✓ All Elite Benefits</li>
+                    <li>✓ Physiotherapy Sessions</li>
+                </ul>
+                <button class="w-full py-3 rounded-lg border border-white/20 hover:bg-white/5 transition uppercase font-bold">Select Plan</button>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-20 px-6 border-t border-white/5">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
-            <div class="col-span-1 md:col-span-1">
-                <div class="flex items-center gap-2 mb-6">
-                    <div class="w-6 h-6 bg-blue-600 rounded flex items-center justify-center font-bold text-[10px] italic">AT</div>
-                    <span class="heading-font font-bold text-lg tracking-tight uppercase">AITechno</span>
+    <footer id="contact" class="bg-black border-t border-white/10 py-16 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="text-4xl font-black tracking-tighter uppercase italic mb-6">Sturdy <span class="text-orange-500">Fitness</span></div>
+                <p class="text-gray-500 mb-6 text-lg">Elevating physical culture in West Bengal. Join the elite.</p>
+                <div class="space-y-2 text-gray-400">
+                    <p class="flex items-center">📍 12/A, Park Street, Kolkata, West Bengal</p>
+                    <p class="flex items-center">📞 +91 98765 43210</p>
+                    <p class="flex items-center">✉️ hello@sturdyfitness.in</p>
                 </div>
-                <p class="text-zinc-500 text-sm leading-relaxed">
-                    Designed and engineered by Amin&Pinak N. Building the software foundations of tomorrow.
-                </p>
             </div>
-            <div>
-                <h4 class="font-bold mb-6 text-sm">Platform</h4>
-                <ul class="space-y-4 text-sm text-zinc-500">
-                    <li><a href="#" class="hover:text-white transition">Automation Engine</a></li>
-                    <li><a href="#" class="hover:text-white transition">Integration API</a></li>
-                    <li><a href="#" class="hover:text-white transition">Security Hub</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold mb-6 text-sm">Company</h4>
-                <ul class="space-y-4 text-sm text-zinc-500">
-                    <li><a href="#" class="hover:text-white transition">About Amin&Pinak N</a></li>
-                    <li><a href="#" class="hover:text-white transition">Blog</a></li>
-                    <li><a href="#" class="hover:text-white transition">Careers</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold mb-6 text-sm">Legal</h4>
-                <ul class="space-y-4 text-sm text-zinc-500">
-                    <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
-                </ul>
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                <h3 class="hero-font text-2xl mb-6 uppercase tracking-tight">Free Consultation</h3>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Full Name" class="w-full bg-black border border-white/10 p-3 rounded-lg focus:border-orange-500 outline-none">
+                    <input type="email" placeholder="Email Address" class="w-full bg-black border border-white/10 p-3 rounded-lg focus:border-orange-500 outline-none">
+                    <button class="w-full accent-gradient py-4 rounded-lg font-black uppercase tracking-widest">Send Request</button>
+                </form>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 border-t border-white/5 pt-12 text-xs text-zinc-600 uppercase tracking-widest font-bold">
-            <div>© 2024 AITechno Amin&Pinak N</div>
-            <div class="flex gap-8">
-                <a href="#" class="hover:text-white">Twitter</a>
-                <a href="#" class="hover:text-white">LinkedIn</a>
-                <a href="#" class="hover:text-white">GitHub</a>
-            </div>
+        <div class="mt-16 text-center text-gray-600 text-sm">
+            © 2025 Sturdy Fitness. All Rights Reserved. Designed for High Performance.
         </div>
     </footer>
 
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
-    </script>
 </body>
 </html>
